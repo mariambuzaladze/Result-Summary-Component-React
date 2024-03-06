@@ -12,4 +12,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ecf2ff;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+  }
 }

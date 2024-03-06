@@ -1,0 +1,129 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #303b59;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.left {
+  display: flex;
+  gap: 12px;
+}
+
+.right {
+  display: flex;
+  gap: 8px;
+}
+
+.texts {
+  font-weight: 500;
+}
+
+.reaction .texts {
+  color: #f55;
+}
+
+.reaction {
+  background-color: #fff7f7;
+}
+
+.memory .texts {
+  color: #ffb21e;
+}
+
+.memory {
+  background-color: #fffcf4;
+}
+
+.verbal .texts {
+  color: #00bb8f;
+}
+
+.verbal {
+  background-color: #f3fcfa;
+}
+
+.visual .texts {
+  color: #1125d6;
+}
+
+.visual {
+  background-color: #f4f5fd;
+}
+
+.number {
+  color: #303b59;
+  font-weight: bold;
+}
+
+.number100 {
+  color: #303b59;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.continue {
+  border-radius: 128px;
+  border: none;
+  background-color: #303b59;
+  height: 56px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.continue:hover {
+  background-image: linear-gradient(to bottom, #75f, #6943ff, #2f2ce9);
+}
+
+@media screen and (min-width: 1440px) {
+  .summary {
+    padding: 38px;
+    gap: 28px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .texts {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 18px;
+  }
+
+  .number100 {
+    font-size: 18px;
+  }
+
+  .containers {
+    gap: 81px;
+  }
+
+  .continue {
+    margin-top: 13px;
+  }
+}

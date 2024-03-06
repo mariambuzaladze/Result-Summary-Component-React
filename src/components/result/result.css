@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 24px;
   align-items: center;
-  padding: 58px;
+  padding: 24px;
   box-shadow: 0 30px 60px 0 rgba(61, 108, 236, 0.15);
   background-image: linear-gradient(to bottom, #75f, #6943ff, #2f2ce9);
   border-radius: 0 0 32px 32px;
@@ -20,9 +20,9 @@
   background-image: linear-gradient(
     to bottom,
     #4d21c9,
-    rgba(63, 33, 201, 0.64),
-    rgba(37, 33, 201, 0),
-    rgba(37, 33, 201, 0)
+    rgba(63, 33, 201, 0.64) 33%,
+    rgba(37, 33, 201, 0) 67%,
+    rgba(37, 33, 201, 0) 67%
   );
   border-radius: 50%;
   display: flex;
@@ -61,4 +61,38 @@
   font-weight: 500;
   text-align: center;
   color: #cac9ff;
+}
+
+@media screen and (min-width: 1440px) {
+  .result {
+    width: 368px;
+    border-radius: 32px;
+    padding: 38px 54px 46px;
+    gap: 33px;
+  }
+
+  .your-result {
+    font-size: 24px;
+  }
+
+  .some {
+    font-size: 72px;
+  }
+
+  .all {
+    font-size: 18px;
+  }
+
+  .oval {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text {
+    font-size: 32px;
+  }
+
+  .message {
+    font-size: 18px;
+  }
 }
