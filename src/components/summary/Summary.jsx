@@ -1,62 +1,46 @@
+import React, { useState } from "react";
 import "./summary.css";
 import Memory from "/images/icon-memory.svg";
 import Reaction from "/images/icon-reaction.svg";
 import Verbal from "/images/icon-verbal.svg";
 import Visual from "/images/icon-visual.svg";
+import Containers from "../containers/containers";
 
 export default function Summary() {
+  const [text, setText] = useState("Reaction");
+  const [icon, setIcon] = useState(Reaction);
+  const [number, setNumber] = useState(80);
+  const [className, setClassName] = useState("reaction");
+
   return (
     <div className="summary">
       <p className="title">Summary</p>
 
       <div className="content">
-        <div className="containers reaction">
-          <div className="left">
-            <img className="lightning" src={Reaction} alt="icon of lightning" />
-            <p className="texts">Reaction</p>
-          </div>
-
-          <div className="right">
-            <span className="number">80</span>
-            <span className="number100">/ 100</span>
-          </div>
-        </div>
-
-        <div className="containers memory">
-          <div className="left">
-            <img className="brain" src={Memory} alt="icon of brain" />
-            <p className="texts">Memory</p>
-          </div>
-
-          <div className="right">
-            <span className="number">92</span>
-            <span className="number100">/ 100</span>
-          </div>
-        </div>
-
-        <div className="containers verbal">
-          <div className="left">
-            <img className="message" src={Verbal} alt="icon of message" />
-            <p className="texts">Verbal</p>
-          </div>
-
-          <div className="right">
-            <span className="number">61</span>
-            <span className="number100">/ 100</span>
-          </div>
-        </div>
-
-        <div className="containers visual">
-          <div className="left">
-            <img className="eye" src={Visual} alt="icon of an eye" />
-            <p className="texts">Visual</p>
-          </div>
-
-          <div className="right">
-            <span className="number">73</span>
-            <span className="number100">/ 100</span>
-          </div>
-        </div>
+        <Containers
+          text={text}
+          icon={icon}
+          number={number}
+          className={className}
+        />
+        <Containers
+          text="Memory"
+          icon={Memory}
+          number="92"
+          className="memory"
+        />
+        <Containers
+          text="Verbal"
+          icon={Verbal}
+          number="61"
+          className="verbal"
+        />
+        <Containers
+          text="Visual"
+          icon={Visual}
+          number="73"
+          className="visual"
+        />
       </div>
 
       <button className="continue">Continue</button>
